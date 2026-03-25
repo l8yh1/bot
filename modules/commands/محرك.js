@@ -45,7 +45,7 @@ module.exports.run = async function ({ api, event, args }) {
 
     const interval = setInterval(() => {
       api.sendMessage(`!uptime`, threadID);
-    }, 3600 * 1000);
+    }, 900 * 1000);
 
     global.engineIntervals.set(threadID, interval);
   } else {
